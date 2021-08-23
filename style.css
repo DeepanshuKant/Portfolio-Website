@@ -69,11 +69,11 @@ body {
 
 #home::before {
   content: " ";
-  height: 145px;
+  height: 30%;
   width: 120%;
   position: absolute;
   /* border: 1px solid white; */
-  bottom: -1px;
+  bottom: -2px;
   /* color: white; */
   background-image: url(./Assets/1.svg);
   /* background-repeat: no-repeat; */
