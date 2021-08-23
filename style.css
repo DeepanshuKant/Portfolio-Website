@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #101010;
+  /* height: 1500px; */
+  overflow-x: hidden;
+}
+
+#navbar {
+  /* border: 1px solid white; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  /* width: 100%; */
+  /* margin: auto; */
+  background-color: #0500ff;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+#navbar .logo {
+  /* border: 1px solid white; */
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin-left: 20px;
+}
+
+#navbar .nav-items {
+  width: 300px;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-around;
+}
+
+#navbar .nav-items li {
+  list-style: none;
+  padding: 5px;
+  /* border: 1px solid red; */
+  border-radius: 3px;
+  transition: background-color 0.5s ease;
+}
+#navbar .nav-items li a {
+  color: white;
+  text-decoration: none;
+}
+
+#navbar .nav-items li:hover {
+  /* background-color: #0502a7; */
+  background-color: black;
+  transition: background-color 0.5s ease;
+}
+
+#home {
+  background-color: #0500ff;
+  min-height: 70vh;
+  /* border: 1px solid red; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#home::before {
+  content: " ";
+  height: 145px;
+  width: 100%;
+  position: absolute;
+  /* border: 1px solid white; */
+  bottom: 0;
+  /* color: white; */
+  background-image: url(./Assets/1.svg);
+  /* background-size: cover; */
+  /* background-position: bottom; */
+  transform: rotate(180deg);
+  /* background-color: white; */
+  z-index: 1;
+}
+
+#home .content span {
+  font-weight: bold;
+}
+
+#home .content {
+  /* border: 1px solid white; */
+  color: white;
+  width: 80%;
+  height: 400px;
+  margin: auto;
+}
+
+#home .content .btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 10px;
+  position: relative;
+  /* z-index: -1; */
+  /* outline: white; */
+  /* outline: auto; */
+  transition: background-color 0.3s ease;
+}
+
+#home .content .btn a {
+  color: white;
+  text-decoration: none;
+}
+#home .content .para1 {
+  font-size: 14px;
+  font-weight: 100;
+}
+#home .content h1 {
+  font-size: 55px;
+}
+
+#home .content .para2 {
+  font-size: 14px;
+}
+
+/* Skills Section CSS Here---------------------------------------->>>>>>>>>>>>>>>>>> */
+#skills {
+  /* border: 1px solid white; */
+  text-align: center;
+  /* margin-top: 10px; */
+  background-color: #110632;
+  /* min-height: 500px; */
+}
+#skills h1 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  /* height: 500px; */
+}
+#skills .container {
+  /* border: 1px solid red; */
+  /* min-height: 400px; */
+  /* min-height: 500px; */
+  padding: 30px;
+}
+
+#skills .container .card {
+  background: #0500ff;
+  border-radius: 5px;
+}
+#skills .container .card p {
+  color: white;
+  font-size: 25px;
+  margin-top: 30px;
+}
+#skills .container .card img {
+  margin-top: 10px;
+  width: 60%;
+}
+#skills .container .card1 img {
+  width: 90%;
+}
+
+#skills .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+#skills .container .card {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  border-right: 12px solid white;
+}
+
+#skills .container .card::before {
+  content: " ";
+  clip-path: circle(39.1% at 0 0);
+  /* display: block; */
+  position: absolute;
+  /* border: 1px solid red; */
+  height: 130px;
+  width: 130px;
+  left: 0px;
+  /* top: 0; */
+  /* background-color: #110632; */
+  background-color: orange;
+  border-top-left-radius: 5px;
+}
+
+/* Contact Form Down below-------------------------------------------------------------- */
+#contact {
+  padding: 30px 20px;
+  background: #110632;
+}
+#contact h3 {
+  font-size: 30px;
+}
+#contact h3,
+#contact p {
+  text-align: center;
+  margin-bottom: 0px;
+  color: white;
+}
+#contact form {
+  /* border: 2px solid red; */
+  width: 80%;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: center;
+}
+#contact input,
+#contact textarea {
+  width: 100%;
+  margin: 10px 0;
+  border: none;
+  outline: none;
+  padding: 20px;
+  border-radius: 10px;
+}
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #0500ff;
+  font-size: 16px;
+}
+
+#contact form button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+#contact form button:hover {
+  cursor: pointer;
+}
+footer {
+  height: 200px;
+  background-color: #0500ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  align-items: center;
+}
+
+footer h3 {
+  color: white;
+  font-size: 16px;
+}
+
+footer .socials {
+  /* border: 1px solid red; */
+  width: 300px;
+  height: 70px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .socials img {
+  width: 30px;
+  height: 30px;
+}
+/*Mobile Build------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+@media (max-width: 500px) {
+}
