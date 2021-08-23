@@ -73,13 +73,14 @@ body {
   width: 100%;
   position: absolute;
   /* border: 1px solid white; */
-  bottom: 0;
+  bottom: 0px;
   /* color: white; */
   background-image: url(./Assets/1.svg);
   /* background-size: cover; */
   /* background-position: bottom; */
   transform: rotate(180deg);
   /* background-color: white; */
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -107,7 +108,7 @@ body {
   /* z-index: -1; */
   /* outline: white; */
   /* outline: auto; */
-  transition: background-color 0.3s ease;
+  /* transition: background-color 0.3s ease; */
 }
 
 #home .content .btn a {
