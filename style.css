@@ -64,27 +64,34 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #home::before {
   content: " ";
-  height: 30%;
-  width: 120%;
+  height: 150px;
+  width: 100%;
   position: absolute;
   /* border: 1px solid white; */
-  bottom: -2px;
+  /* top: 385px; */
+  bottom: 0px;
+  /* top: 0; */
+  left: 0;
+  /* border-top: 2px solid #110632; */
   /* color: white; */
   background-image: url(./Assets/1.svg);
-  /* background-repeat: no-repeat; */
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* left: -1px; */
   /* right: -1px; */
   background-size: cover;
-  /* background-position: bottom; */
+  background-position: bottom;
   transform: rotate(180deg);
   /* background-color: white; */
   /* overflow-x: hidden; */
   /* z-index: 1; */
+  overflow: hidden;
 }
 
 #home .content span {
@@ -137,7 +144,21 @@ body {
   height: 800px;
   /* margin-top: 10px; */
   background-color: #110632;
+  position: relative;
+  /* top: -50px; */
   /* min-height: 500px; */
+}
+#skills::before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  height: 800px;
+  background-image: url(./Assets/blob2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 #skills h1 {
   color: white;
@@ -148,6 +169,7 @@ body {
 }
 #skills .container {
   /* border: 1px solid red; */
+  margin-top: -85px;
   /* min-height: 400px; */
   /* min-height: 500px; */
   /* height: 85vh; */
