@@ -5,7 +5,7 @@
   font-family: "Roboto", sans-serif;
 }
 body {
-  background-color: #101010;
+  background-color: #110632;
   /* height: 1500px; */
   overflow-x: hidden;
 }
@@ -58,7 +58,7 @@ body {
 
 #home {
   background-color: #0500ff;
-  min-height: 520px;
+  height: 80vh;
   /* border: 1px solid red; */
   position: relative;
   display: flex;
@@ -76,12 +76,15 @@ body {
   bottom: 0px;
   /* color: white; */
   background-image: url(./Assets/1.svg);
+  /* background-repeat: no-repeat; */
+  left: 0;
+  right: 0;
   /* background-size: cover; */
   /* background-position: bottom; */
   transform: rotate(180deg);
   /* background-color: white; */
-  overflow: hidden;
-  z-index: 1;
+  /* overflow: hidden; */
+  /* z-index: 1; */
 }
 
 #home .content span {
