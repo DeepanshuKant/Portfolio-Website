@@ -64,26 +64,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 #home::before {
   content: " ";
   height: 145px;
-  width: 100%;
+  width: 120%;
   position: absolute;
   /* border: 1px solid white; */
-  bottom: 0px;
+  bottom: -1px;
   /* color: white; */
   background-image: url(./Assets/1.svg);
   /* background-repeat: no-repeat; */
-  left: 0;
-  right: 0;
-  /* background-size: cover; */
+  /* left: -1px; */
+  /* right: -1px; */
+  background-size: cover;
   /* background-position: bottom; */
   transform: rotate(180deg);
   /* background-color: white; */
-  /* overflow: hidden; */
+  /* overflow-x: hidden; */
   /* z-index: 1; */
 }
 
