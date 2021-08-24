@@ -76,7 +76,7 @@ body {
   padding: 20px;
   color: white;
   /* width: 80%; */
-  height: 300px;
+  height: 70vh;
   margin: auto;
 }
 
@@ -296,5 +296,5 @@ footer .socials img {
   height: 30px;
 }
 /*Mobile Build------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-@media (max-width: 500px) {
+@media (min-width: 1200px) {
 }
