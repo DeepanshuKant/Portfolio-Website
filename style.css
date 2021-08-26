@@ -297,4 +297,26 @@ footer .socials img {
 }
 /*Mobile Build------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
+  #home {
+    /* border: 1px solid white; */
+    /* width: 80%; */
+    /* margin: auto; */
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #home .content {
+    /* border: 1px solid white; */
+  }
+
+  #home .added {
+    /* border: 1px solid green; */
+    width: 400px;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    font-size: 20px;
+    position: relative;
+    right: 80px;
+  }
 }
