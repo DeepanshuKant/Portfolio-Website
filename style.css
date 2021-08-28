@@ -18,7 +18,7 @@ body {
   height: 80px;
   /* width: 100%; */
   /* margin: auto; */
-  background-color: #0500ff;
+  background-color: #5c59fc;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -58,7 +58,7 @@ body {
 }
 
 #home {
-  background-color: #0500ff;
+  background-color: #5c59fc;
   height: 450px;
   /* border: 1px solid red; */
   position: relative;
@@ -111,9 +111,7 @@ body {
 #home .content .para2 {
   font-size: 14px;
 }
-#home .added {
-  display: none;
-}
+
 /* Skills Section CSS Here---------------------------------------->>>>>>>>>>>>>>>>>> */
 #skills {
   /* border: 1px solid white; */
@@ -161,8 +159,8 @@ body {
 }
 
 #skills .container .card {
-  background: #140257;
-  /* border-radius: 5px; */
+  background: #5c59fc;
+  border-radius: 5px;
   position: relative;
   height: 100px;
   width: 100px;
@@ -191,7 +189,7 @@ body {
   clip-path: circle(39.1% at 0 0);
   display: block;
   position: absolute;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 70px;
   width: 70px;
   left: 0px;
@@ -238,7 +236,7 @@ body {
 }
 #contact input::placeholder,
 #contact textarea::placeholder {
-  color: #0500ff;
+  color: #5c59fc;
   font-size: 16px;
   font-weight: bold;
 }
@@ -273,7 +271,7 @@ body {
 }
 footer {
   height: 200px;
-  background-color: #0500ff;
+  background-color: #5c59fc;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -319,30 +317,11 @@ footer .socials img {
     font-size: 6rem;
   }
 
-  #home .added {
-    /* border: 1px solid green; */
-    width: 300px;
-    height: 300px;
-    background-color: black;
-    border-radius: 5px;
-    color: white;
-    padding: 40px;
-    font-size: 1rem;
-    line-height: 1.5rem;
+  /* #home .added p {
     position: relative;
-    top: -25px;
-    right: 100px;
-    display: block;
-    z-index: 9;
-  }
-  .added::before {
-    content: " ";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background-color: red;
-    z-index: 1;
-  }
+    z-index: 5;
+  } */
+
   #home {
     display: flex;
     /* justify-content: space-between; */
