@@ -22,6 +22,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
 }
 
 #navbar .logo {
@@ -110,7 +111,9 @@ body {
 #home .content .para2 {
   font-size: 14px;
 }
-
+#home .added {
+  display: none;
+}
 /* Skills Section CSS Here---------------------------------------->>>>>>>>>>>>>>>>>> */
 #skills {
   /* border: 1px solid white; */
@@ -203,6 +206,7 @@ body {
   padding: 30px 20px;
   background: #110632;
   position: relative;
+  /* border: 1px solid red; */
 }
 #contact h3 {
   font-size: 30px;
@@ -247,12 +251,12 @@ body {
   background-position: center;
   /* color: aliceblue; */
   width: 100%;
-  height: 400px;
-  top: 40px;
+  height: 100%;
+  /* top: 7rem; */
   left: 0;
   /* border: 1px solid red; */
   /* top: 30px; */
-  z-index: 2;
+  z-index: 1;
 }
 #contact form button {
   background-color: black;
@@ -306,17 +310,42 @@ footer .socials img {
   }
 
   #home .content {
-    /* border: 1px solid white; */
+    /* border: 1px solid black; */
+    position: relative;
+    /* top: -30px; */
+    /* left: 3rem; */
+  }
+  #home .content h1 {
+    font-size: 6rem;
   }
 
   #home .added {
     /* border: 1px solid green; */
-    width: 400px;
+    width: 300px;
+    height: 300px;
     background-color: black;
+    border-radius: 5px;
     color: white;
     padding: 40px;
-    font-size: 20px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     position: relative;
-    right: 80px;
+    top: -25px;
+    right: 100px;
+    display: block;
+    z-index: 9;
+  }
+  .added::before {
+    content: " ";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: red;
+    z-index: 1;
+  }
+  #home {
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: 1px solid white; */
   }
 }
