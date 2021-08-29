@@ -303,6 +303,25 @@ footer .socials img {
 }
 /*Mobile Build------------------>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 @media (min-width: 1200px) {
+  html {
+    scrollbar-width: normal;
+
+    scrollbar-color: #777 #555;
+  }
+  html::-webkit-scrollbar {
+    width: 1vw;
+    /* height: 100px; */
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: #130535;
+    border-radius: 50px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: #0b08aa;
+  }
+
   #home {
     /* border: 1px solid white; */
     /* width: 80%; */
@@ -339,6 +358,7 @@ footer .socials img {
     height: 250px;
     font-size: 1.1rem;
     background: whitesmoke;
+    /* background: transparent; */
     padding: 20px;
     position: relative;
     right: 10rem;
@@ -385,10 +405,20 @@ footer .socials img {
   }
   #skills .container .card:hover {
     /* background: #dededf; */
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
+    /* transform: ; */
+    transform: rotate3d(1, 1, 1, 45deg);
+    /* top: -10px; */
+    /* transform: rotate(360deg); */
     transition: all 0.3s ease;
     box-shadow: 0px 0px 10px 2px white;
   }
+
+  #skills .container .card:hover::before {
+    background-color: red;
+    transition: background-color 0.3s;
+  }
+
   #skills .container .card p {
     color: white;
     font-weight: bold;
@@ -420,6 +450,7 @@ footer .socials img {
     /* background-color: #110632; */
     background-color: orange;
     border-top-left-radius: 5px;
+    transition: background-color 0.3s;
   }
   #skills h1 {
     color: white;
