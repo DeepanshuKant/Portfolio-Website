@@ -482,7 +482,9 @@ footer .socials img {
     /* top: 30px; */
     z-index: 1;
   }
-
+  textarea {
+    resize: none;
+  }
   footer .socials {
     /* border: 1px solid red; */
     width: 300px;
