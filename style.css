@@ -315,6 +315,7 @@ footer .socials img {
   html::-webkit-scrollbar-thumb {
     background-color: transparent;
     border: 3px solid rgb(0, 230, 238);
+    /* box-shadow: 0 0 10px rgb(0, 230, 238); */
     /* height: 10px; */
 
     border-radius: 50px;
